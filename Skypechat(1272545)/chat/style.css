@@ -1,0 +1,98 @@
+body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	      background: lightsteelblue;
+      }
+.main {
+  width: 23%;
+  margin: auto;
+ box-shadow: 5px 20px 50px #000;
+  border-radius: 8px;    
+  overflow:hidden;
+}
+.strong{
+  color: white;
+}
+#divUser{
+  padding: 10px 8px;
+  background: lightslategray;
+  border-bottom: 1px solid black; 
+}
+#messages{
+  height: 230px;
+ 
+}
+#dropContainer{
+  background: lightslategray;
+ height: 109px;
+}
+h5{
+  color: white;
+  padding: 5px 13px;
+  font-size: 0.9rem;
+  
+}
+#formFileUpload{
+ margin-top: -27PX;
+ display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin-bottom: 5px;
+}
+#fileInput{
+  color: white;
+  margin: 2px;
+}
+input[type="file"]::-webkit-file-upload-button {
+  border: none;
+  background-color: #e7e7e7;
+  padding: 5px 10px;
+border-radius: 5px;
+}
+input#submit {
+    padding: 3px 18px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+	margin-right:4px;
+	 background: white;
+	
+}
+#formMessage{
+  margin: 2px;
+  display: flex;
+  align-items: stretch;
+  padding: 0 10px;
+}
+#m{
+  width: 100%;
+  border-radius: 4px 0px 0px 4px;
+  border-style: none;
+  padding: 10px 7px;
+  outline: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+button{
+  padding: 0  6px;
+  border-radius: 0px 4px 4px 0px;
+  border-style: none;
+  background: RGB(16,13,43);
+  cursor: pointer;
+  user-select: none;
+  font-size:20px;
+  color:white;
+}
+
+@media (max-width: 1000px) {
+	.main {
+		width: 50%;
+	}
+}

@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Login Form Design</title>
+        <link rel="stylesheet" type="text/css" href="signup/style.css">
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script>
+          $(function () {
+               $('#btnSignUp').click(function(e){
+                      var oUserInfo = {
+                        "userId": $('#username').val()
+                    };
+                  sessionStorage.setItem('userInfo', JSON.stringify(oUserInfo));
+                  window.location.replace("http://localhost:3000/chat");
+                });
+            });
+            
+         </script>  
+
+    </head>
+        <body>
+            <div class="loginbox">
+                <img src="images/skype.png"class="avatar">
+                <h1>Login here</h1>
+                <form>
+                    <p id="1">Username</p>
+                    <input type="text" placeholder="Enter Username" id="username">
+                    <p>Password</p>
+                    <input type="text" placeholder="Enter password">
+                    <input type="button" id="btnSignUp"  class="btn"value="Sign Up" >
+                    <a href="#">Lost your password?</a><br>
+                    <a href="#">Dont have an account</a>
+                </form>
+
+            </div>
+        </body>
+    
+</html>
